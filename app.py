@@ -32,21 +32,21 @@ elif weather == '02d' :
     weather = 'few clouds (day)'
 elif weather == '02n' :
     weather = 'few clouds (night)'
-elif weather == '03d' :
+elif weather == '03d' or weather == '03n' :
     weather = 'scattered clouds'
-elif weather == '04d' :
+elif weather == '04d' or weather == '04n':
     weather = 'broken clouds'
-elif weather == '09d' :
+elif weather == '09d' or weather == '09d':
     weather = 'shower rain'
-elif weather == '10d' :
+elif weather == '10d':
     weather = 'rain (day time)'
 elif weather == '10n' :
     weather = 'rain (night time)'
-elif weather == '11d' :
+elif weather == '11d' or weather == '11n':
     weather = 'thunderstorm'
-elif weather == '13d' :
+elif weather == '13d' or weather == '13n':
     weather = 'snow'
-elif weather == '50d' :
+elif weather == '50d' or  weather == '50n':
     weather = 'mist'
 
 # CREATE AND SETTING TK WINDOWS
@@ -136,7 +136,7 @@ weather_label_w.config(font=('Segoe UI Variable Text Light', 15))
 weather_data_w = tkinter.Label(text = weather, fg='#3B3933', font='bold')
 weather_data_w.config(font=('Segoe UI Variable Display Semib', 15))
 data.create_window(120, ystart, window=weather_label_w, anchor='w')
-data.create_window(480, ystart, window=weather_data_w)
+data.create_window(572, ystart, window=weather_data_w, anchor='e')
 data.create_line(120, ystart+20, 570, ystart+20)
 ystart = ystart + 50
 
@@ -282,28 +282,27 @@ def submit():
 
     if weather == '01d' :
         weather = 'clear sky (day)'
-        fgt = ''
     elif weather == '01n' :
         weather = 'clear sky (night)'
     elif weather == '02d' :
         weather = 'few clouds (day)'
     elif weather == '02n' :
         weather = 'few clouds (night)'
-    elif weather == '03d' :
+    elif weather == '03d' or weather == '03n' :
         weather = 'scattered clouds'
-    elif weather == '04n' :
+    elif weather == '04d' or weather == '04n':
         weather = 'broken clouds'
-    elif weather == '09d' :
+    elif weather == '09d' or weather == '09d':
         weather = 'shower rain'
-    elif weather == '10d' :
+    elif weather == '10d':
         weather = 'rain (day time)'
     elif weather == '10n' :
         weather = 'rain (night time)'
-    elif weather == '11d' :
+    elif weather == '11d' or weather == '11n':
         weather = 'thunderstorm'
-    elif weather == '13d' :
+    elif weather == '13d' or weather == '13n':
         weather = 'snow'
-    elif weather == '50d' :
+    elif weather == '50d' or  weather == '50n':
         weather = 'mist'
 
 
