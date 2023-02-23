@@ -1,0 +1,33 @@
+{
+    "status": "success",
+    "data": {
+      "city": "South Tangerang",
+      "state": "Banten",
+      "country": "Indonesia",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.71789,
+          -6.28862
+        ]
+      },
+      "current": {
+        "pollution": {
+          "ts": "2023-02-21T21:00:00.000Z",
+          "aqius": 42,
+          "mainus": "p2",
+          "aqicn": 14,
+          "maincn": "p2"
+        },
+        "weather": {
+          "ts": "2023-02-21T21:00:00.000Z",
+          "tp": 25,
+          "pr": 1012,
+          "hu": 88,
+          "ws": 2.06,
+          "wd": 250,
+          "ic": "04n"
+        }
+      }
+    }
+  }
